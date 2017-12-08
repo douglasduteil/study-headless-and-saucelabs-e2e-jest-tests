@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests/issues"
   },
-  "homepage": "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests#readme"
+  "homepage": "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests#readme",
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "jest": "^21.2.1",
+    "prettier": "^1.9.1",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.6.2"
+  }
 }
