@@ -1,0 +1,24 @@
+
+---
+dist: trusty
+language: node_js
+sudo: false
+git:
+  depth: 5
+
+node_js: stable
+
+cache:
+  yarn: true
+
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - source ~/.bashrc
+
+stages:
+  - Local tests
+
+jobs:
+  include:
+    - stage: Local tests
+      script: yarn test
