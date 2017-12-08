@@ -1,4 +1,8 @@
-# study-headless-and-saucelab-e2e-jest-tests
+# Study: Headless and SauceLab e2e Jest tests
+
+<p align=center>
+<img alt="licence logo" width=777 src=https://media.giphy.com/media/l4FGolW8YUWdf2zba/giphy.gif>
+</p>
 
 > :microscope: Studying how one could use Jest to run e2e tests thought Headless browsers like WebdriverIO
 
