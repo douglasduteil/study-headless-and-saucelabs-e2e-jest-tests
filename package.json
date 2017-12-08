@@ -4,6 +4,7 @@
   "description": "> :microscope: Studying how one could use Jest to run e2e tests thought Headless browsers like WebdriverIO",
   "main": "index.js",
   "scripts": {
+    "test_headless": "jest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,8 +20,10 @@
   "homepage": "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests#readme",
   "devDependencies": {
     "@types/jest": "^21.1.8",
+    "@types/puppeteer": "^0.13.7",
     "jest": "^21.2.1",
     "prettier": "^1.9.1",
+    "puppeteer": "0.12",
     "ts-jest": "^21.2.4",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.6.0",
