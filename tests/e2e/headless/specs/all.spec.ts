@@ -5,7 +5,7 @@
 // https://github.com/cypress-io/cypress-example-todomvc/blob/8f2b4fb701aa1dba34c26a1627344dcb77b1ca07/cypress/integration/app_spec.js
 //
 
-import { Browser, Page } from 'puppeteer';
+import { Page } from 'puppeteer';
 
 //
 
@@ -14,7 +14,7 @@ const todoItem = (x: number) => `.todo-list li:nth-child(${x})`;
 let page: Page;
 
 beforeEach(async () => {
-  page = await browser.newPage();
+  page = await global.browser.newPage();
   await page.goto('http://todomvc.com/examples/vanillajs/');
 });
 

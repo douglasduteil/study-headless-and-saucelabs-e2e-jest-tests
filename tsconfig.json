@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["dom", "es2015"],
     "module": "es2015",
     "moduleResolution": "node",
     "noEmit": true,
@@ -9,6 +10,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
-    "target": "es2017"
+    "target": "es2017",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/jest-environment-puppeteer/@types"
+    ]
   }
 }

@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "description": "> :microscope: Studying how one could use Jest to run e2e tests thought Headless browsers like WebdriverIO",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test_headless": "yarn run jest --config __tests__/jest.config.js",
+    "test_headless": "jest --config tests/e2e/headless/jest.config.js",
     "test": "yarn run test_headless"
   },
   "repository": {
@@ -22,11 +23,15 @@
     "@types/jest": "^21.1.9",
     "@types/puppeteer": "^0.13.7",
     "jest": "^22.0.4",
+    "jest-environment-puppeteer": "^0.0.0",
     "prettier": "^1.9.1",
-    "puppeteer": "0.13.0",
+    "puppeteer": "0.12.0",
     "ts-jest": "^22.0.0",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.6.0",
     "typescript": "^2.6.2"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

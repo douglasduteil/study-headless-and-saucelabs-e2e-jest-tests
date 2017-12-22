@@ -2,22 +2,21 @@ module.exports = {
   bail: true,
   globals: {
     'ts-jest': {
-      tsConfigFile: '<rootDir>/../tsconfig.json'
+      tsConfigFile: './tsconfig.json'
     }
   },
-  globalSetup: '<rootDir>/headless/setup.js',
-  globalTeardown: '<rootDir>/headless/teardown.js',
+  globalSetup: './setup.js',
+  globalTeardown: 'jest-environment-puppeteer/teardown.js',
   transform: {
     '^.+\\.(ts)$': 'ts-jest'
   },
-  testEnvironment: '<rootDir>/headless/puppeteer_environment.js',
+  testEnvironment: 'jest-environment-puppeteer',
   testEnvironmentOptions: {
     headless: false
   },
   testRegex: '.*\\.spec\\.ts$',
   moduleFileExtensions: ['ts', 'js', 'html', 'json'],
   mapCoverage: true,
-  rootDir: require('path').resolve(__dirname, '..'),
-  roots: ['<rootDir>/headless/specs'],
+  roots: ['./specs'],
   verbose: true
 };
