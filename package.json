@@ -1,8 +1,7 @@
 {
   "name": "study-headless-and-saucelab-e2e-jest-tests",
   "version": "0.0.0",
-  "description":
-    "> :microscope: Studying how one could use Jest to run e2e tests thought Headless browsers like WebdriverIO",
+  "description": "> :microscope: Studying how one could use Jest to run e2e tests thought Headless browsers like WebdriverIO",
   "main": "index.js",
   "scripts": {
     "test_headless": "yarn run jest --config __tests__/jest.config.js",
@@ -10,26 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests.git"
+    "url": "git+https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests.git"
   },
   "keywords": [],
-  "author":
-    "Douglas Duteil <douglasduteil@gmail.com> (douglasduteil.github.io)",
+  "author": "Douglas Duteil <douglasduteil@gmail.com> (douglasduteil.github.io)",
   "license": "WTFPL",
   "bugs": {
-    "url":
-      "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests/issues"
+    "url": "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests/issues"
   },
-  "homepage":
-    "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests#readme",
+  "homepage": "https://github.com/douglasduteil/study-headless-and-saucelab-e2e-jest-tests#readme",
   "devDependencies": {
-    "@types/jest": "^21.1.8",
+    "@types/jest": "^21.1.9",
     "@types/puppeteer": "^0.13.7",
-    "jest": "^21.2.1",
+    "jest": "^22.0.4",
     "prettier": "^1.9.1",
-    "puppeteer": "0.12",
-    "ts-jest": "^21.2.4",
+    "puppeteer": "0.13.0",
+    "ts-jest": "^22.0.0",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.6.0",
     "typescript": "^2.6.2"
