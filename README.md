@@ -1,11 +1,12 @@
 # Study: Headless and SauceLabs e2e Jest tests
 
+> :microscope: Studying how one could use Jest to run e2e tests thought Headless browsers like WebdriverIO
+
 [![Build Status][travis-image]][travis-url]
 [![Sauce Test Status][saucelabs-master-branch-status-image]][saucelabs-master-branch-url]
 
 [![Sauce Test Status - Master Branch][saucelabs-master-branch-matrix-image]][saucelabs-master-branch-url]
 
-> :microscope: Studying how one could use Jest to run e2e tests thought Headless browsers like WebdriverIO
 
 <p align=center>
 <img alt="licence logo" width=777 src=https://media.giphy.com/media/l4FGolW8YUWdf2zba/giphy.gif>
