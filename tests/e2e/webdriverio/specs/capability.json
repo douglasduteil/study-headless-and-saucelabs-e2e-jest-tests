@@ -1,0 +1,4 @@
+{
+  "browserName": "firefox",
+  "moz:firefoxOptions": { "args": ["-headless"] }
+}

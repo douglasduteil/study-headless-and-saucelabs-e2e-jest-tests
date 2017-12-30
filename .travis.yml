@@ -16,9 +16,18 @@ before_install:
   - source ~/.bashrc
 
 stages:
-  - Local tests
+  - name: Local tests
+  - name: Remote tests
+    if:  type IN (cron, push, pull_request) AND (fork = false) AND (tag IS blank)
+
 
 jobs:
   include:
     - stage: Local tests
-      script: yarn test
+      script: yarn test_headless
+    - stage: Remote tests
+      before_script: '
+        yarn run install_selenium;
+        yarn run gen_capabilities_test;
+      '
+      script: yarn test_webdriverio

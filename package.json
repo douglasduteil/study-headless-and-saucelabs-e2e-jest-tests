@@ -5,7 +5,11 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "install_selenium": "selenium-standalone install --singleDriverInstall=firefox",
+    "gen_saucelab_capabilities": "node scripts/generate_capabilities.js --output tests/e2e/webdriverio/saucelab_capabilities.json",
+    "gen_capabilities_test": "node scripts/copy_test_by_capabilities.js",
     "test_headless": "jest --config tests/e2e/headless/jest.config.js",
+    "test_webdriverio": "jest --config tests/e2e/webdriverio/jest.config.js",
     "test": "yarn run test_headless"
   },
   "repository": {
@@ -22,14 +26,22 @@
   "devDependencies": {
     "@types/jest": "^21.1.9",
     "@types/puppeteer": "^0.13.7",
+    "@types/webdriverio": "^4.8.7",
+    "fs-extra": "^5.0.0",
     "jest": "^22.0.4",
     "jest-environment-puppeteer": "^0.0.0",
     "prettier": "^1.9.1",
-    "puppeteer": "0.12.0",
+    "puppeteer": "0.13",
+    "sauce-connect-launcher": "^1.2.3",
+    "saucelabs": "^1.4.0",
+    "saucelabs-multicapabilities-generator": "^0.0.1",
+    "selenium-standalone": "^6.12.0",
+    "selenium-webdriver": "^3.6.0",
     "ts-jest": "^22.0.0",
     "tslint": "^5.8.0",
     "tslint-config-prettier": "^1.6.0",
-    "typescript": "^2.6.2"
+    "typescript": "^2.6.2",
+    "webdriverio": "^4.9.11"
   },
   "workspaces": [
     "packages/*"
