@@ -1,4 +1,4 @@
-# Study: Headless and SauceLab e2e Jest tests
+# Study: Headless and SauceLabs e2e Jest tests
 
 [![Build Status][travis-image]][travis-url]
 [![Sauce Test Status][saucelabs-master-branch-status-image]][saucelabs-master-branch-url]
