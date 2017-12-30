@@ -32,5 +32,5 @@ $ yarn test
 [saucelabs-master-branch-url]: https://saucelabs.com/u/dd-25fd8aa
 [saucelabs-master-branch-status-image]: https://saucelabs.com/buildstatus/dd-25fd8aa
 [saucelabs-master-branch-matrix-image]: https://saucelabs.com/browser-matrix/dd-25fd8aa.svg
-[travis-url]: https://travis-ci.org/douglasduteil/study-headless-and-saucelab-e2e-jest-tests
-[travis-image]: https://travis-ci.org/douglasduteil/study-headless-and-saucelab-e2e-jest-tests.svg?branch=master
+[travis-url]: https://travis-ci.org/douglasduteil/study-headless-and-saucelabs-e2e-jest-tests
+[travis-image]: https://travis-ci.org/douglasduteil/study-headless-and-saucelabs-e2e-jest-tests.svg?branch=master
