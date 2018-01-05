@@ -13,7 +13,7 @@ const generateCapabilities = require('saucelabs-multicapabilities-generator');
   const force = options.f || options.force;
 
   console.log(`
-  Generating capabilities for:
+  Generating Saucelabs multi capabilities for:
   ${range}
   in ${output}
   `);

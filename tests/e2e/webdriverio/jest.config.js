@@ -27,32 +27,3 @@ function local() {
     }
   };
 }
-
-function saucelab() {
-  //const saucelabCapabilities = require('./saucelab_capabilities.json');
-  const saucelabCapabilities = [
-    {
-      browserName: 'android',
-      platform: 'Linux',
-      version: '4.4',
-      name: 'Android Emulator 4.4'
-    }
-  ];
-  const capabilities = saucelabCapabilities.reduce(
-    (memo, c) =>
-      Object.assign(memo, {
-        [c.name]: {
-          desiredCapabilities: c,
-
-          host: 'ondemand.saucelabs.com',
-          key: process.env.SAUCE_ACCESS_KEY,
-          port: 80,
-          user: process.env.SAUCE_USERNAME
-        }
-      }),
-    {}
-  );
-  return {
-    capabilities
-  };
-}
